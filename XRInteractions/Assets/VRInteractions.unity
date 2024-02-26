@@ -28691,7 +28691,7 @@ Transform:
   m_GameObject: {fileID: 2900146098397572122}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0, y: 0.226, z: 0.39299998}
+  m_LocalPosition: {x: 0, y: 0.22600001, z: 0.3930002}
   m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35437,8 +35437,10 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+  drawerTransform: {fileID: 7051407407917400478}
   keySocket: {fileID: 5412829180764185546}
   isLocked: 1
+  limitDistances: {x: 0.2, y: 0.1, z: 0}
 --- !u!23 &6898835318737149300
 MeshRenderer:
   m_ObjectHideFlags: 0

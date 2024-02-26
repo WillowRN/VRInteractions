@@ -68,23 +68,25 @@ public class DrawerInteractable : XRGrabInteractable
         {
             drawerTransform.localPosition = new Vector3(drawerTransform.localPosition.x,
                 drawerTransform.localPosition.y,transform.localPosition.z);
-            CheckLimits();
+          CheckLimits();
         }
     }
 
-    private void CheckLimits()
+   private void CheckLimits()
     {
-        if(transform.localPosition.x >= limitPositions.x + limitDistances.x ||
-           transform.localPosition.x <= limitPositions.x + limitDistances.x)
+       if(transform.localPosition.x >= limitPositions.x + limitDistances.x ||
+           transform.localPosition.x <= limitPositions.x - limitDistances.x)
         {
             ChangeLayerMask(defaultLayer);
         }
-        else if (transform.localPosition.y >= limitPositions.y + limitDistances.y ||
-           transform.localPosition.y <= limitPositions.y + limitDistances.y)
+       else if (transform.localPosition.y >= limitPositions.y + limitDistances.y ||
+           transform.localPosition.y <= limitPositions.y - limitDistances.y)
         {
             ChangeLayerMask(defaultLayer);
         }
+       
     }
+   
 
     private void ChangeLayerMask(string mask)
     {
